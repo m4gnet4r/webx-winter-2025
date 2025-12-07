@@ -224,13 +224,14 @@ section {
         padding-bottom: 4px;
     }
     .navlist{
-        background-color: rgb(84, 184, 121);
+        background-color: white;
         display:flex;
         flex-direction: column;
         align-items: flex-start;
         width:100%;
         padding-top:7px;
         padding-bottom: 7px;
+        padding-left:25px;
     }
     .about-me,.project{
         height:auto;
