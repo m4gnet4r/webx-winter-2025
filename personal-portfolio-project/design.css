@@ -1,0 +1,239 @@
+body {  
+    font-famliy: 'Segoe UI',Tahoma ,Geneva,verdana,sans-serif;
+    background-image: url("bgd_image.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:0px;
+    margin:0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    position:fixed;
+    height: 3.5rem;
+    top:0;
+}
+.navlist{
+    width: 50%;
+
+    list-style:none;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right: 12%;
+    gap: 10px;
+}
+.navlist li a{
+    color:rgb(71, 70, 70);
+    font-size: 21px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:7px;
+    padding-bottom:7px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    cursor:pointer;
+
+}
+.navlist li a:hover{
+    background-color: gray;
+    transition: all,0.3s,ease;
+}
+.navdiv1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.navlogo{
+    font-size: 32px;
+    color:rgb(71, 70, 70);
+    font-weight: bold;
+    padding:5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    border-color: rgb(71, 70, 70);;
+}
+.sec_set{
+    display:flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+section {
+   height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content{
+    width:60%;
+    text-align:center
+}
+.profile{
+    width:45%;
+    border-style:solid;
+    border-width:1em;
+    border-color:white;
+    border-radius: 8px;
+    padding:1em;
+}
+.home-content h1{
+    font-size: 44px;
+    padding-top:7px;
+    padding-bottom:7px;
+    color: rgb(37, 9, 93);
+}
+.home-content h1 span{
+    color: rgb(13, 57, 57);
+}
+.home-content p{
+    font-size: 20px;
+    color: rgb(37, 9, 93);
+}
+.about-me,.project{
+    padding:50px 7%;
+    background-color: antiquewhite;
+    border-style:solid ;
+    border-radius: 8px;
+    border-width: 2px;
+    height: 50%;
+    width: 50%;
+    
+
+}
+.project-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+.project-card{
+    padding:25px;
+    text-align: center;
+    background-color: rgb(255, 203, 98);
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    color:rgb(37, 9, 93);
+}
+.project-card h3{
+    font-size:25px;
+    padding:5px;
+}
+.project-card p{
+    font-size:17px;
+}
+
+.about-me h2,.project h2{
+    font-size:44px;
+    padding-bottom:20px;
+    color: rgb(37, 9, 93);
+}
+.about-me p{
+    margin-top:50px;
+    font-size:25px;
+    color: rgb(37, 9, 93);
+}
+.project-grid{
+    display:grid;
+}
+.contact{
+    margin:40px 10% 25px;
+    padding:20px 7% 10px;
+    background-color: antiquewhite;
+    border-style:solid ;
+    border-radius: 8px;
+    border-width: 2px;
+
+}
+.contact h1{
+    font-size:37px;
+    padding-bottom:20px;
+    color: rgb(37, 9, 93);
+    text-align: center;
+}
+.contact-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    gap:20px;
+    align-items: center;
+}
+.contact-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    padding: 12px 15px;
+}
+.social-icons{
+    text-decoration:none;
+    padding:10px;
+    background-color: white;
+    border:none;
+    border-radius: 50%;
+}
+.social-icons i{
+    font-size:2em;
+    color:black;
+    
+}
+.social-icons i:hover{
+    color:white;
+    transition: 0.3s;
+}
+.social-icons:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+.contact-block span,.contact-link{
+    color: rgb(229, 71, 13);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-block span:hover,.contact-link:hover{
+    color: rgb(150, 40, 5);
+}
+
+
+@media(max-width:768px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .navdiv1{
+        padding-top:2px;
+        padding-bottom: 4px;
+    }
+    .navlist{
+        background-color: rgb(84, 184, 121);
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+        padding-top:7px;
+        padding-bottom: 7px;
+    }
+    .about-me,.project{
+        height:auto;
+    }
+
+}
