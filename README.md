@@ -46,3 +46,4 @@ Use this repo to browse and explore my projects built with HTML, CSS (and option
 2. Navigate to any project folder.
 
 3. Open the index.html (or main HTML file) in a web browser to view the project.
+
