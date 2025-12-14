@@ -10,7 +10,8 @@ Use this repo to browse and explore my projects built with HTML, CSS (and option
     │ README.md ← this file
     │ .gitignore
     │
-    ├── personal-portfolio/ ← my personal portfolio site (static HTML+CSS)
+    ├── personal-portfolio
+    ├── weather-app
     └── ... other project folders ...
 
 ---
@@ -28,7 +29,8 @@ Use this repo to browse and explore my projects built with HTML, CSS (and option
 | #  | Project Name        | Description                        | Status        |
 |----|---------------------|------------------------------------|---------------|
 | 1  | Personal Portfolio  | A responsive single-page portfolio built with HTML & CSS. | ✅ Done |
-| 2  | …                   | …                                  | …             |
+| 2  | Weather App         | A dynamic weather app that displays real-time weather conditions for any city using HTML, CSS, and JavaScript. | ✅ Done |
+| 3  | …                   | …                                  | …             |
 
 ---
 
