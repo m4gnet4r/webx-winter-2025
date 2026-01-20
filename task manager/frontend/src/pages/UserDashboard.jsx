@@ -15,7 +15,7 @@ const UserDashboard=()=>{
     const fetchTasks=async ()=>{
         setLoading(true);
         try{
-            const res= await API.get("/tasks");
+            const res= await API.get("/api/tasks");
             setTasks(res.data);
         }catch(err){setError("Failed to Load Task");}
         finally{setLoading(false) ;}
@@ -26,7 +26,7 @@ const UserDashboard=()=>{
     const addTask= async()=>{
         if(!newTask)return;
         try{
-            await API.post("/tasks",{title:newTask});
+            await API.post("/api/tasks",{title:newTask});
             setNewTask("");
             fetchTasks();
         }catch(err){
@@ -37,14 +37,14 @@ const UserDashboard=()=>{
 
     const deleteTask=async(id)=>{
         try{
-            await API.delete(`/tasks/${id}`);
+            await API.delete(`/api/tasks/${id}`);
             fetchTasks();
         }catch{setError("Failed to delete Task");}
     }
 
     const updateTask=async(id)=>{
         try{
-            await API.put(`/tasks/${id}`);
+            await API.put(`/api/tasks/${id}`);
             fetchTasks();
         }catch{setError("Failed to update Task");}
     }

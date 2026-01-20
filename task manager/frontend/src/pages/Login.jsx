@@ -15,7 +15,7 @@ const Login = ()=>{
         setError("");
         setLoad(true);
         try{
-            const res=await API.post("/auth/login",{email,password});
+            const res=await API.post("/api/auth/login",{email,password});
             localStorage.setItem("token",res.data.token);
             const payload = JSON.parse(atob(res.data.token.split(".")[1]));
             if(payload.role==="admin") navigate("/admin");
@@ -35,7 +35,7 @@ const Login = ()=>{
         <div className="container">
             <h2>Login</h2>
             <input placeholder="Enter email" value={email} onChange={e=>setEmail(e.target.value)} />
-            <input placeholder="Enter email" value={password} type="password" onChange={e=>setPassword(e.target.value)} />
+            <input placeholder="Enter password" value={password} type="password" onChange={e=>setPassword(e.target.value)} />
             <button onClick={handleLogin}>{load?"Logging in..":"Login"}</button>
             <p className="auth-link">
                 Don't have an account?{" "}

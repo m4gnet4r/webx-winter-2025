@@ -15,7 +15,7 @@ const AdminDashboard=()=>{
         setLoading(true);
         setError("");
         try{
-            const res=await API.get("/admin/users") 
+            const res=await API.get("/api/admin/users") 
             setUsers(res.data);
         }catch(err){setError("Failed to load user list");}
         finally{setLoading(false);}
@@ -25,7 +25,7 @@ const AdminDashboard=()=>{
         setLoading(true);
         setError("");
         try{
-            const res=await API.get("/admin/tasks") 
+            const res=await API.get("/api/admin/tasks") 
             setTasks(res.data);
         }catch(err){setError("Failed to load Task list");}
         finally{setLoading(false);}

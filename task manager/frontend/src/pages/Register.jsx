@@ -16,7 +16,7 @@ const Register=()=>{
         setLoad(true);
         setError("");
         try{
-            const res = await API.post("/auth/register",{name,email,password});
+            const res = await API.post("/api/auth/register",{name,email,password});
             alert(res.data.message);
             navigate("/login");
         }catch(err){
